@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:gocery_app/pages/home_page/widgets/search_bar.dart';
 import 'package:gocery_app/widgets/app_bar/app_bar.dart';
+import 'package:gocery_app/widgets/reusable/product_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -33,7 +34,13 @@ class HomePage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 17,
                 fontWeight: FontWeight.w500,
-              ),),
+              ),
+              ),
+              Row(
+               children: [
+                 ProductCard(),
+               ],
+              )
             ],
           ),
         ),
